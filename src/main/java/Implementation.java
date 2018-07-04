@@ -1,7 +1,7 @@
 package io.github.nebubit.hashimage;
 
-import java.awt.Image;
+import java.awt.image.BufferedImage;
 
 public interface Implementation {
-	public Hash hash(Image image);
+    public Hash hash(BufferedImage image);
 }

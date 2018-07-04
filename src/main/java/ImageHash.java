@@ -1,20 +1,21 @@
 package io.github.nebubit.hashimage;
 
 import java.awt.Image;
+import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import io.github.nebubit.hashimage.Implementation;
 
-class ImageHash {
-	protected Implementation implementation;
+public class ImageHash {
+    private Implementation implementation;
 
-	ImageHash (Implementation implementation){
-		this.implementation = implementation;
-	}
+    public ImageHash (Implementation implementation) {
+        this.implementation = implementation;
+    }
 
-	public Hash hash(String imagePath) throws java.io.IOException {
-		Image img = ImageIO.read(new File(imagePath));
+    public Hash hash(String imagePath) throws java.io.IOException {
+        BufferedImage img = ImageIO.read(new File(imagePath));
 
-		return this.implementation.hash(img);
-	}
+        return this.implementation.hash(img);
+    }
 }

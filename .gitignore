@@ -24,6 +24,7 @@ hs_err_pid*
 
 # gradle
 /.gradle/
+/src/test/java/.gradle/
 /build/
 
 # Ignore Gradle GUI config
