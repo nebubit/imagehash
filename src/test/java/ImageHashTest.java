@@ -20,19 +20,19 @@ public class ImageHashTest {
     }
 
     @Test
-    public void testDifferenceHashCompare() throws java.io.IOException {
-        String imagePath = "src/test/java/resources/images/office/tumblr_ndyfnr7lk21tubinno1_1280.jpg";
+    public void testDifferenceHashComparesForestImages() throws java.io.IOException {
+        String imagePath = "src/test/java/resources/images/forest/forest-high.jpg";
         File file = new File(imagePath);
         assertTrue(file.exists());
         ImageHash imageHash = new ImageHash(new DifferenceHash());
         Hash hash = imageHash.hash(imagePath);
 
-        imagePath = "src/test/java/resources/images/office/tumblr_ndyfq386o41tubinno1_1280.jpg";
+        imagePath = "src/test/java/resources/images/forest/forest-copyright.jpg";
         file = new File(imagePath);
         assertTrue(file.exists());
         imageHash = new ImageHash(new DifferenceHash());
         Hash hash2 = imageHash.hash(imagePath);
 
-        assertEquals(15, hash.distance(hash2));
+        assertEquals(2, hash.distance(hash2));
     }
 }

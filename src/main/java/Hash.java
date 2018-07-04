@@ -27,6 +27,10 @@ public class Hash {
         return this.value;
     }
 
+    public String toBinaryString() {
+        return this.value.toString(2);
+    }
+
     public int distance(Hash hash) {
         return this.value.xor(hash.toBigInteger()).bitCount();
     }
