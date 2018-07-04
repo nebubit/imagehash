@@ -7,8 +7,8 @@ This repository is inspired by the PHP version [ImageHash](https://github.com/je
 
 ## Requirements
 
-- JDK 1.7 or higher
-- junit 4.12 or higher
+- OpenJDK 1.7 or higher
+- JUnit 4.12 or higher
 
 
 

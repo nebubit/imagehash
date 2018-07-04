@@ -1,0 +1,9 @@
+language: java
+dist: trusty
+sudo: false
+jdk:
+  - openjdk7
+  - openjdk8
+branches:
+  only:
+    - master
