@@ -1,4 +1,9 @@
 # ImageHash
+
+<p align="center">
+<a href="https://travis-ci.org/nebubit/imagehash"><img src="https://travis-ci.org/nebubit/imagehash.svg" alt="Build Status"></a>
+</p>
+
 Perceptual image hashing for Java.
 
 This repository is inspired by the PHP version [ImageHash](https://github.com/jenssegers/imagehash).
@@ -7,7 +12,7 @@ This repository is inspired by the PHP version [ImageHash](https://github.com/je
 
 ## Requirements
 
-- OpenJDK 1.7 or higher
+- JDK 1.8 or higher
 - JUnit 4.12 or higher
 
 
